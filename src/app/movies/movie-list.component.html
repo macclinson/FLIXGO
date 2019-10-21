@@ -1,0 +1,92 @@
+<section class="home">
+  <!-- home bg -->
+  <div class="owl-carousel home__bg">
+    <div class="item home__cover" data-bg="img/home/home__bg.jpg"></div>
+    <div class="item home__cover" data-bg="img/home/home__bg2.jpg"></div>
+    <div class="item home__cover" data-bg="img/home/home__bg3.jpg"></div>
+    <div class="item home__cover" data-bg="img/home/home__bg4.jpg"></div>
+  </div>
+  <!-- end home bg -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <h1 class="home__title">Best Movie Picks</h1>
+      </div>
+      <div class="col-12 col-sm-6 text-sm-right">
+        <input class="search-movie" type='text' placeholder="Search movie by title"
+               [(ngModel)]='listFilter' />
+      </div>
+    </div>
+    <div class="row" *ngIf="router.url === '/movies'">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor='let movie of filteredMovies'>
+        <div class="item">
+          <!-- card -->
+          <div class="card card--big">
+            <div class="card__cover">
+              <img [src]='movie.imageUrl' [title]='movie.movieName' />
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">
+                <a [routerLink]="['/movies', movie.movieId]">
+                  {{ movie.movieName }}
+                </a>
+              </h3>
+              <span class="card__category">
+                {{ movie.releaseDate }}
+              </span>
+              <div class="card__rate">
+                <pm-star [rating]='movie.starRating'
+                         (ratingClicked)='onRatingClicked($event)'>
+                </pm-star>
+                <span class="text-white ml-2 d-inline-block">{{movie.starRating}}</span>
+
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+        </div>
+
+      </div>
+      </div>
+    <div class="row" *ngIf="router.url === '/favourites'">
+      <ng-container *ngFor="let movie of filteredMovies" >
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngIf="movie.favourite === true">
+          <div class="item">
+            <!-- card -->
+            <div class="card card--big">
+              <div class="card__cover">
+                <img [src]='movie.imageUrl' [title]='movie.movieName' />
+              </div>
+              <div class="card__content">
+                <h3 class="card__title">
+                  <a [routerLink]="['/movies', movie.movieId]">
+                    {{ movie.movieName }}
+                  </a>
+                </h3>
+                <span class="card__category">
+                  {{ movie.releaseDate }}
+                </span>
+                <div class="card__rate">
+                  <pm-star [rating]='movie.starRating'
+                           (ratingClicked)='onRatingClicked($event)'>
+                  </pm-star>
+                  <span class="text-white ml-2 d-inline-block">{{movie.starRating}}</span>
+
+                </div>
+              </div>
+            </div>
+            <!-- end card -->
+          </div>
+
+        </div>
+      </ng-container>
+    </div>
+
+    </div>
+</section>
+
+
+<div *ngIf='errorMessage'
+     class='alert alert-danger'>
+  Error: {{ errorMessage }}
+</div>

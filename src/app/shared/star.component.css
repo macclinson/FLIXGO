@@ -1,0 +1,13 @@
+.crop {
+  overflow: hidden;
+}
+div {
+  cursor: pointer;
+}
+.rating-container{
+  width: 75px;
+}
+.rating-container span{
+  text-shadow: 0 0 6px rgba(255,88,96,0.5);
+  color: #ff5860;
+}

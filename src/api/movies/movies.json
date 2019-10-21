@@ -1,0 +1,120 @@
+[
+  {
+    "movieId": 1,
+    "movieName": "The Wicked",
+    "releaseDate": "March 19, 2013",
+    "runtTime": "1 hr 45 min",
+    "genre": "Horror",
+    "director": "Peter Winther",
+    "writer": "Peter Winther",
+    "favourite": false,
+    "description": "On a dangerous dare, a group of teenagers investigate the local lore of a flesh-eating immortal witch living deep in the woods.",
+    "starRating": 3.2,
+    "imageUrl": "assets/images/cover7.jpg",
+    "banner": "assets/images/cover7_poster.jpg"
+  },
+  {
+    "movieId": 2,
+    "movieName": "The Axiom",
+    "releaseDate": "June 19, 2019",
+    "runtTime": "1 hr 38 mins",
+    "genre": "Thriller",
+    "director": "Nicholas Woods",
+    "writer": "Nicholas Woods",
+    "favourite": false,
+    "description": "A woman searching for her missing sister leads her friends into a National Forest that traps them all in a multi-dimensional world of monsters.",
+    "starRating": 4.5,
+    "imageUrl": "assets/images/cover8.jpg",
+    "banner": "assets/images/cover8_poster.jpg"
+  },
+  {
+    "movieId": 3,
+    "movieName": "Minutes to Midnight",
+    "releaseDate": "March 29, 2018",
+    "runtTime": "1 hr 31 min",
+    "genre": "Horror",
+    "director": "Christopher Ray",
+    "writer": "Christopher Ray",
+    "favourite": false,
+    "description": "Seven friends converge at a desolate ski lodge to ring in the new year and are systematically hunted down by ruthless masked men with a deadly agenda.",
+    "starRating": 3.8,
+    "imageUrl": "assets/images/cover9.jpg",
+    "banner": "assets/images/cover9_poster.jpg"
+
+  },
+  {
+    "movieId": 4,
+    "movieName": "House of Fears",
+    "releaseDate": "March 19, 2007",
+    "runtTime": "1 hr 25 min",
+    "genre": "Thriller",
+    "director": "Ryan Little",
+    "writer": "Ryan Little",
+    "favourite": false,
+    "description": "A few hours of spooky fun sneaking into a haunted house become a nightmare as six friends are trapped inside with no way out -- and they aren't alone.",
+    "starRating": 3.1,
+    "imageUrl": "assets/images/cover10.jpg",
+    "banner": "assets/images/cover10_poster.jpg"
+
+  },
+  {
+    "movieId": 5,
+    "movieName": "Death's Door",
+    "releaseDate": "December 9, 2015",
+    "runtTime": "1 hr 31 min",
+    "genre": "Horror",
+    "director": "Kennedy Goldsby",
+    "writer": "Kennedy Goldsby",
+    "favourite": false,
+    "description": "What starts as a thrilling party at an old mansion, quickly turns into a nightmare when all the doors won't open and there’s only one way out.",
+    "starRating": 2.8,
+    "imageUrl": "assets/images/cover11.jpg",
+    "banner": "assets/images/cover11_poster.jpg"
+
+  },
+  {
+    "movieId": 6,
+    "movieName": "Paranormal Highway",
+    "releaseDate": "March 19, 2017",
+    "runtTime": "1 hr 40 min",
+    "genre": "Thriller",
+    "director": "Stacy Peterson",
+    "writer": "Forrest Peterson",
+    "favourite": false,
+    "description": "A college team and its coaches take a three-day bus trip to play in a championship, but when they hit a detour, they face a night of ultimate terror.",
+    "starRating": 3.5,
+    "imageUrl": "assets/images/cover12.jpg",
+    "banner": "assets/images/cover12_poster.jpg"
+
+  },
+  {
+    "movieId": 7,
+    "movieName": "Dead Stop",
+    "releaseDate": "March 19, 2017",
+    "runtTime": "1 hr 22 min",
+    "genre": "Horror",
+    "director": "Jonas Stolpe",
+    "writer": "Forrest Peterson",
+    "favourite": false,
+    "description": "Five friends lost in the desert and miles from civilization, become prey to a creature that is savage, relentless and hungry for blood.",
+    "starRating": 4.5,
+    "imageUrl": "assets/images/cover13.jpeg",
+    "banner": "assets/images/cover13_poster.jpg"
+
+  },
+  {
+    "movieId": 8,
+    "movieName": "Bodies",
+    "releaseDate": "March 19, 2016",
+    "runtTime": "1 hr 38 min",
+    "genre": "Horror",
+    "director": "Jonas Stolpe",
+    "writer": "Rodney Wilson",
+    "favourite": false,
+    "description": "Two brothers pose as paramedics and harvest victims’ organs for the black market, but they meet their match with a woman who’s impossible to kill.",
+    "starRating": 4.5,
+    "imageUrl": "assets/images/cover14.jpg",
+    "banner": "assets/images/cover14_poster.jpg"
+
+  }
+]

@@ -1,0 +1,81 @@
+<div class='card'
+     *ngIf='movie'>
+
+     <section class="section details">
+   <!-- details background -->
+   <div class="details__bg" data-bg="img/home/home__bg.jpg"></div>
+   <!-- end details background -->
+
+   <!-- details content -->
+   <div class="container">
+     <div class="row">
+       <!-- title -->
+       <div class="col-12">
+         <h1 class="details__title">{{movie.movieName}}</h1>
+       </div>
+
+       <!-- end title -->
+
+       <!-- content -->
+
+       <div class="col-12">
+         <div class="card card--details">
+           <div class="row">
+             <!-- card cover -->
+             <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+               <div class="">
+                 <img class='center-block img-fluid'
+                      [style.margin.px]='2'
+                      [src]='movie.banner'
+                      [title]='movie.movieName'>
+               </div>
+             </div>
+             <!-- end card cover -->
+
+             <!-- card content -->
+             <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+               <div class="card__content">
+                 <div class="card__wrap">
+                   <pm-star [rating]='movie.starRating'>
+                   </pm-star> <span class="text-white ml-2 d-inline-block">{{movie.starRating}}</span>
+                 </div>
+
+                 <ul class="card__meta">
+                   <li><span>Genre:</span> <span class="badge badge-pill badge-info mt-1">{{movie.genre}}</span></li>
+                   <li><span>Release year:</span><strong>{{movie.releaseDate}}</strong> </li>
+                   <li><span>Running time:</span><strong>{{movie.runtTime}}</strong> </li>
+                   <li><span>Director:</span><strong>{{movie.director}}</strong> </li>
+                   <li><span>Writer:</span><strong>{{movie.writer}}</strong> </li>
+                 </ul>
+
+                 <div class="card__description card__description--details">
+                   {{movie.description}}
+                 </div>
+                 <div class="make-favourite mt-2">
+                   <!-- <button class='btn btn-outline-secondary'
+                           (click)='onBack()'
+                           style='width:80px'>
+                     <i class='fa fa-chevron-left'></i> Back
+                   </button> -->
+                   <div *ngIf="favourited; else notFavourited">
+                    <i (click)='onFavouriteClicked(movie.movieId)' class="fa fa-heart"></i>
+                  </div>
+
+                  <ng-template #notFavourited>
+                    <i (click)='onFavouriteClicked(movie.movieId)' class="fa fa-heart-o"></i>
+                  </ng-template>
+
+                 </div>
+               </div>
+             </div>
+             <!-- end card content -->
+           </div>
+         </div>
+       </div>
+       <!-- end content -->
+
+     </div>
+   </div>
+   <!-- end details content -->
+ </section>
+</div>
